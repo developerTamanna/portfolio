@@ -22,7 +22,7 @@ const navItems = [
 
 const SideNavbar = () => {
   return (
-    <div className="fixed top-1/2 h-[80%] -translate-y-1/2 right-6 z-20 space-y-4 flex flex-col items-center justify-between bg-white/10 backdrop-blur-md p-4 rounded-full shadow-lg">
+    <div className="fixed md:top-1/2 md:h-[80%] md:-translate-y-1/2 md:right-6 z-20 bottom-6 w-full md:w-auto right-0 md:space-y-4 md:flex md:flex-col items-center justify-between inline-flex   bg-white/10 backdrop-blur-md p-4 rounded-full shadow-lg">
       {navItems.map((item, idx) => (
         <NavLink to={`${item.path}`}  key={idx} className={({isActive}) => `${(isActive ? "text-blue-400" : " text-red-500")} group relative flex items-center`}>
           <div className=" hover:text-blue-400 text-inherit cursor-pointer">
