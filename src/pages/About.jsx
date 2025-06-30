@@ -13,7 +13,7 @@ const AboutPage = () => {
       <div className="full mx-auto text-center">
         <h2 className="text-4xl font-bold text-red-500 mb-8">🛠 Skills, Education & More</h2>
         <p className="text-xl text-gray-300 mb-12">
-          Hi, I'm <span className="text-blue-400 font-semibold">Maruf Ahmmed</span>, a passionate developer with strong problem-solving ability and expertise in using ChatGPT & AI tools.
+          Hi, I'm <span className="text-blue-400 font-semibold">Tamanna Akter</span>, a passionate developer with strong problem-solving ability and expertise in using ChatGPT & AI tools.
         </p>
      </div>
       <About />

@@ -9,7 +9,7 @@ const projectData = [
     image: AppStore,
     description:
       "A Play Store-inspired web app where users can browse apps, give ratings and reviews, and securely log in or out using Firebase Authentication. Built entirely with React.",
-    stack: ["Express", "Firebase", "JavaScript", "React"],
+    stack: ["daisyui", "Firebase", "JavaScript", "React"],
     live: "https://play-store-platform.web.app",
     clientRepo: "https://github.com/developerTamanna/play-store-platform",
   },

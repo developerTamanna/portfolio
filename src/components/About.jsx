@@ -49,14 +49,14 @@ const skills = [
 const education = [
   {
     degree: "BSc in Computer Science & Engineering",
-    institution: "Your University Name",
-    year: "Running (3rd Year)",
-    cgpa: "CGPA: 3.50"
+    institution: "Sylhet International University",
+    year: "Running (1rd semester)",
+
   },
   {
-    degree: "HSC - Science",
-    institution: "Your College Name",
-    year: "Year Passed: 2021",
+    degree: "HSC - Equivalent",
+    institution: "Sylhet Polytechnic Institute",
+    year: "Year Passed: 2024",
   },
 ];
 const awards = [
