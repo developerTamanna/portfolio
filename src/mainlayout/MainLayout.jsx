@@ -17,7 +17,7 @@ const MainLayout = () => {
       <TopNavbar />
       <SideNavbar />
       <ParticlesBackground />
-      <div className="w-full h-full">
+      <div className=" pb-25 w-full h-full">
         {loading ? <Loader onComplete={() => setloading(false)} /> : <Outlet />}
       </div>
     </div>
