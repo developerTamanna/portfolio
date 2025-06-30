@@ -3,7 +3,7 @@ import profileImage from '../assets/profile.png'; // Replace with your image
 
 const Hero = () => {
   return (
-    <div className="relative w-full min-h-screen flex flex-col md:flex-row items-center justify-between overflow-hidden px-6 z-10">
+    <div className="relative w-full min-h-screen flex flex-col md:flex-row md:items-center md:justify-between justify-center items-center overflow-hidden px-6 z-10">
       {/* Left Text */}
       <div className="w-full md:w-1/2 space-y-6 text-start">
         <h1 className="text-4xl md:text-5xl font-bold leading-tight">
