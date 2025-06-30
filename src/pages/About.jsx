@@ -8,7 +8,7 @@ const AboutPage = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 50 }}
       transition={{ duration: 0.5 }}
-      className=' pl-10 pr-30 px-6 pt-16 bg-gradient-to-br from-black via-gray-900 to-red-900 text-white min-h-screen flex flex-col items-center justify-start'
+      className=' md:pl-10 md:pr-30 md:px-6 px-2 pt-16 bg-gradient-to-br from-black via-gray-900 to-red-900 text-white min-h-screen flex flex-col items-center justify-start'
     >
       <div className="full mx-auto text-center">
         <h2 className="text-4xl font-bold text-red-500 mb-8">🛠 Skills, Education & More</h2>
