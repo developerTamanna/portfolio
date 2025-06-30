@@ -25,7 +25,7 @@ const SideNavbar = () => {
     <div className="fixed top-1/2 h-[80%] -translate-y-1/2 right-6 z-20 space-y-4 flex flex-col items-center justify-between bg-white/10 backdrop-blur-md p-4 rounded-full shadow-lg">
       {navItems.map((item, idx) => (
         <NavLink to={`${item.path}`}  key={idx} className={({isActive}) => `${(isActive ? "text-blue-400" : " text-red-500")} group relative flex items-center`}>
-          <div className=" hover:text-blue-400 text-inherit cursor-pointer"> 
+          <div className=" hover:text-blue-400 text-inherit cursor-pointer">
             {item.icon}
           </div>
           {/* Tooltip */}
