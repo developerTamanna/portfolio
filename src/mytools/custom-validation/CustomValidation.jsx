@@ -76,7 +76,7 @@ export const NumberValidationCheck={
   }
 }
 
-// return multiple error together 
+// return multiple error together
 export const PasswordValidationCheck={
    validate:{
       islength:async(v)=>{
@@ -130,9 +130,9 @@ export const PasswordValidationCheck={
 export const EmailValidationCheck = {
   validate: async (v) => {
     return await new Promise((resolve) =>
-      setTimeout(() => {
+      setTimeout(async() => {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(v)|| DangerousContentCheck.validate(v) !== true) {
+        if (!emailPattern.test(v)|| await DangerousContentCheck.validate(v) !== true) {
           return resolve("Invalid email format");
         }
         resolve(true);

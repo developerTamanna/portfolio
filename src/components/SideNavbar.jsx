@@ -22,17 +22,17 @@ const navItems = [
 
 const SideNavbar = () => {
   return (
-    <div className="fixed md:top-1/2 md:h-[80%] md:-translate-y-1/2 md:right-6 z-20 bottom-6 w-full md:w-auto right-0 md:space-y-4 md:flex md:flex-col items-center justify-between inline-flex   bg-white/10 backdrop-blur-md p-4 rounded-full shadow-lg">
+    <div className="fixed md:top-1/2 md:h-[80%] md:-translate-y-1/2 md:right-6 z-[999] bottom-3 w-full h-fit md:w-auto right-0 space-y-4   flex md:flex-col flex-row  items-center justify-between   bg-white/10 backdrop-blur-md p-4 rounded-full shadow-lg">
       {navItems.map((item, idx) => (
-        <NavLink to={`${item.path}`}  key={idx} className={({isActive}) => `${(isActive ? "text-blue-400" : " text-red-500")} group relative flex items-center`}>
-          <div className=" hover:text-blue-400 text-inherit cursor-pointer">
+        <div   key={idx} className=" group relative ">
+          <NavLink to={`${item.path}`} className={({isActive}) => `${(isActive ? "text-blue-400" : " text-red-500")} hover:text-blue-400  w-fit h-fit cursor-pointer`}>
             {item.icon}
-          </div>
+          </NavLink>
           {/* Tooltip */}
           <div className="absolute right-[120%] pr-2 opacity-0 group-hover:opacity-100 translate-x-[-10px] group-hover:translate-x-0 transition-all duration-200 bg-black  text-sm px-2 py-1 rounded shadow-md whitespace-nowrap">
             <p className=" text-red-700">{item.label}</p>
           </div>
-        </NavLink>
+        </div>
       ))}
     </div>
   );

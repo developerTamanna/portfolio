@@ -13,7 +13,7 @@ export const userNameValidation={
         message:"maximum 30 character accept"
     },
     pattern:{
-        value:/^[a-zA-Z.]+$/,
+        value:/^[a-zA-Z. ]+$/,
         message:"Only lowercase uppercase letters and dot(.) allowed"
     }
 }

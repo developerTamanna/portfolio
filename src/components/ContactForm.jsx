@@ -12,10 +12,23 @@ const ContactForm = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
-    alert("Message sent successfully!");
-    reset();
+const onSubmit =async(data) => {
+     console.log(data);
+    const { name, email, subject, message } = data;
+    const res=await fetch("https://portfolio-backend-seven-phi.vercel.app/send-mail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ name, email, subject, message })
+    });
+    if (res.ok) {
+      alert("Message sent successfully!");
+      console.log(res.success)
+      reset();
+    } else {
+      alert("Error sending message.");
+    }
   };
 
   return (

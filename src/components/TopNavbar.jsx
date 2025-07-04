@@ -36,14 +36,21 @@ const TopNavbar = () => {
           >
             <FaFacebook />
           </a>
-         
+
           <a
             href="tel:+8801732572529"
             className="hover:text-red-500 transition-colors text-[18px]"
           >
             <FaPhone />
           </a>
-
+          <a
+            href="https://wa.me/8801234567890"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-red-500 transition-colors text-[18px]"
+          >
+            <FaWhatsapp />
+          </a>
         </div>
       </div>
     </div>
